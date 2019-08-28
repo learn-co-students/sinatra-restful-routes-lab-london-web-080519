@@ -1,0 +1,19 @@
+<%# <form action="/recipes/" method="post">
+    <p><label for="name">Name:</label></p>
+    <p><input type="text" name="name" id="name" value="name"></p>
+    <p><label for="ingredients">Ingredients:</label></p>
+    <p><input type="text" name="ingredients" id="ingredients" value="ingredients"></p>
+    <p><label for="cook_time">Cook time:</label></p>
+    <p><input type="text" name="cook_time" id="cook_time" value="cook_time"></p>
+    <p><input type="submit"></p>
+</form> %>
+
+<h2>Add A New Recipe</h2>
+<form action="/recipes" method="post">
+  <!-- add recipe to the front of all your input names to make them -->
+  <!-- available in your controller as a hash via params[:recipe]-->
+  <p>Name: <input type="text" name="name"></p>
+  <p>Ingredients: <input type="text" name="ingredients"></p>
+  <p>Cook time:<input type="text" name="cook_time"></p>
+  <button type="submit" value="submit">Submit</button>
+</form>
